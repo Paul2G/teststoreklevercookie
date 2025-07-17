@@ -94,7 +94,8 @@
               {%- when 'tabs' -%}
                 {% render 'product-tabs',
                   product: product,
-                  details: block.settings.details_content
+                  details: block.settings.details_content,
+                  returns: block.settings.returns_content
                 %}
               {%- when 'text' -%}
                 <p
@@ -744,7 +745,9 @@
       "type": "tabs",
       "name": "Tabs",
       "settings": [
-        { "type": "richtext", "id": "details_content", "label": "Details and fit" }
+        {"type": "paragraph", "content": "This block will display the store's refund and shipping policy.. You can configure it from [here](/store/teststoreklevercookie/settings/legal)."},
+        { "type": "richtext", "id": "details_content", "label": "Details and fit" },
+        { "type": "richtext", "id": "returns_content", "label": "Returns policy", "info": "It will only be visible if the product is tagged “Final Sale” and will supersede the store's return policy." }
       ]
     },
     {

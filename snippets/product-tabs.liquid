@@ -27,6 +27,10 @@
 
   <product-tabs-content role="tabpanel" aria-labelledby="product-tabs-policies-{{ block.id }}" aria-hidden="true">
     {{ shop.shipping_policy }}
-    {{ shop.refund_policy }}
+    {% if product.tags contains 'Final Sale' %}
+      {{ returns }}
+    {% else %}
+      {{ shop.refund_policy }}
+    {% endif %}
   </product-tabs-content>
 </product-tabs>

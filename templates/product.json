@@ -57,7 +57,10 @@
         },
         "tabs_HFeErB": {
           "type": "tabs",
-          "settings": {}
+          "settings": {
+            "details_content": "<p>{{ product.metafields.store.details_and_fit | metafield_tag }}</p>",
+            "returns_content": "<p>This is just custom returns policy adn only should be visible because product is tagged \"Final Sale\"</p>"
+          }
         }
       },
       "block_order": [
