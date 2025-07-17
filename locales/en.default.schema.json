@@ -2375,6 +2375,21 @@
               "default": "Heading"
             }
           }
+        },
+        "tabs": {
+          "name": "Tabs",
+          "settings": {
+            "paragraph__1": {
+              "content": "This block will display the store's refund and shipping policy.. You can configure it from [here](https://admin.shopify.com/store/teststoreklevercookie/settings/legal)."
+            },
+            "details_content": {
+              "label": "Details & fit"
+            },
+            "returns_content": {
+              "label": "Returns policy",
+              "info": "It will only be visible if the product is tagged “Final Sale” and will supersede the store's return policy."
+            }
+          }
         }
       },
       "settings": {
