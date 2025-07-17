@@ -1,0 +1,34 @@
+product-tabs {
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+product-tabs > .product-tabs__list {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+product-tabs product-tabs-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--color-foreground);
+  font-size: 1.7rem;
+  font-family: var(--font-body-family);
+}
+
+product-tabs product-tabs-content {
+  display: none;
+  animation: var(--animation-fade-in);
+}
+
+/* Modifier */
+product-tabs product-tabs-button[aria-selected="true"] {
+  font-weight: bold;
+}
+
+product-tabs product-tabs-content[aria-hidden="false"] {
+  display: block;
+}
