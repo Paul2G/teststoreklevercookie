@@ -94,6 +94,7 @@
               {%- when 'tabs' -%}
                 {% render 'product-tabs',
                   product: product,
+                  block: block,
                   details: block.settings.details_content,
                   returns: block.settings.returns_content
                 %}
